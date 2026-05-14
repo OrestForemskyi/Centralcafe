@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню — Central Café</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="img/Central Café-logo.png" type="image/png">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-inner">
+            <!-- ЛОГОТИП -->
+            <div class="logo">
+                <img src="img/Central Café-logo.png" alt="Central Café" class="icon"> Central Café
+            </div>
+            <!-- МЕНЮ НАВІГАЦІЇ -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#about">Про нас</a></li>
+                    <li><a href="menu.html">Меню</a></li>
+                    <li><a href="booking.html">Бронювання</a></li>
+                    <li><a href="index.html#contacts">Контакти</a></li>
+                </ul>
+            </nav>
+            <!-- БУРГЕР МЕНЮ-->
+            <div class="burger" id="burger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div>
+            <!-- ЗАГОЛОВОК СТОРІНКИ -->
+            <h1>Наше <span class="accent-text">меню</span></h1>
+            <p>Насолодіться своїм улюбленим напитком</p>
+        </div>
+    </section>
+
+    <section class="booking-section">
+        <div class="container">
+            <!-- КАТЕГОРІЇ МЕНЮ - 4 категорії напитків та десертів -->
+            <div class="category-grid">
+                <div class="category-card" data-category="coffee">
+                    <div class="category-icon"><i class="fas fa-mug-hot"></i></div>
+                    <h3>Кава</h3>
+                </div>
+                <div class="category-card" data-category="alternative">
+                    <div class="category-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Альтернативні напої</h3>
+                </div>
+                <div class="category-card" data-category="cold">
+                    <div class="category-icon"><i class="fas fa-snowflake"></i></div>
+                    <h3>Холодні напої</h3>
+                </div>
+                <div class="category-card" data-category="dessert">
+                    <div class="category-icon"><i class="fas fa-cake-candles"></i></div>
+                    <h3>Десерти та випічка</h3>
+                </div>
+            </div>
+
+            <div class="section-title">
+                <h2>Смачні <span class="accent-text">пропозиції</span></h2>
+                <p>Підберіть свій улюблений напій або десерт</p>
+            </div>
+
+            <div class="menu-grid" id="menuItems">
+                <div class="menu-card" data-category="coffee">
+                    <img src="img/coffee1.jpg" alt="Еспресо класик">
+                    <div class="card-info">
+                        <div class="card-header">
+                            <h3>Еспресо класик</h3>
+                            <span class="price">45 ₴</span>
+                        </div>
+                        <p>Класичне еспресо з насиченим смаком та густою кремою.</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="coffee">
+                    <img src="img/coffee2.jpg" alt="Авторський латте">
+                    <div class="card-info">
+                        <div class="card-header">
+                            <h3>Авторський латте</h3>
+                            <span class="price">70 ₴</span>
+                        </div>
+                        <p>Ніжний латте з карамельною ноткою та бархатною пінкою.</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="coffee">
+                    <img src="img/coffee3.jpg" alt="Капучино велюр">
+                    <div class="card-info">
+                        <div class="card-header">
+                            <h3>Капучино велюр</h3>
+                            <span class="price">65 ₴</span>
+                        </div>
+                        <p>Пікантна кава з м’якою молочною піною та карамельним ароматом.</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="alternative">
+                    <img src="img/alternative1.jpg" alt="Матча латте">
+                    <div class="card-info">
+                        <div class="card-header">
+                            <h3>Матча латте</h3>
+                            <span class="price">75 ₴</span>
+                        </div>
+                        <p>Зелений чай матча з вершковим молоком та м’яким смаком.</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="alternative">
+                    <img src="img/alternative2.jpg" alt="Чай латте">
+                    <div class="card-info">
+                        <div class="card-header">
+                            <h3>Чай латте</h3>
+                            <span class="price">60 ₴</span>
+                        </div>
+                        <p>Теплий чай з молоком, ідеальний для затишних вечорів.</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="alternative">
+                    <img src="img/alternative3.jpg" alt="Золотий латте">
+                    <div class="card-info">
+                        <div class="card-header">
+                            <h3>Золотий латте</h3>
+                            <span class="price">80 ₴</span>
+                        </div>
+                        <p>Імбирний напій з куркумою та вершками для тепла і енергії.</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="cold">
+                    <img src="img/cold1.jpg" alt="Холодний латте">
+                    <div class="card-info">
+                        <div class="card-header">
+                            <h3>Холодний латте</h3>
+                            <span class="price">80 ₴</span>
+                        </div>
+                        <p>Освіжаючий кавовий напій з льодом та ніжною карамельною ноткою.</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="cold">
+                    <img src="img/cold2.jpg" alt="Фраппе з ваніллю">
+                    <div class="card-info">
+                        <div class="card-header">
+                            <h3>Фраппе з ваніллю</h3>
+                            <span class="price">85 ₴</span>
+                        </div>
+                        <p>Крижаний напій з ванільним сиропом та ніжною кремовою шапкою.</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="cold">
+                    <img src="img/cold3.jpg" alt="Лимонний айс-ті">
+                    <div class="card-info">
+                        <div class="card-header">
+                            <h3>Лимонний айс-ті</h3>
+                            <span class="price">65 ₴</span>
+                        </div>
+                        <p>Світлий прохолодний чай з лимоном і м’ятою для літнього настрою.</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="dessert">
+                    <img src="img/dessert1.jpg" alt="Морквяний кекс">
+                    <div class="card-info">
+                        <div class="card-header">
+                            <h3>Морквяний кекс</h3>
+                            <span class="price">55 ₴</span>
+                        </div>
+                        <p>Теплий десерт з нотками спецій і ніжною глазур’ю.</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="dessert">
+                    <img src="img/dessert2.jpg" alt="Шоколадний брауні">
+                    <div class="card-info">
+                        <div class="card-header">
+                            <h3>Шоколадний брауні</h3>
+                            <span class="price">60 ₴</span>
+                        </div>
+                        <p>Смачний і насичений десерт для справжніх шоколадних гурманів.</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="dessert">
+                    <img src="img/dessert3.jpg" alt="Чізкейк з ягодами">
+                    <div class="card-info">
+                        <div class="card-header">
+                            <h3>Чізкейк з ягодами</h3>
+                            <span class="price">70 ₴</span>
+                        </div>
+                        <p>Легкий сирний десерт з ягідною ноткою і хрусткою основою.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="logo"><img src="img/Central Café-logo.png" alt="Central Café" class="icon"> Central Café</div>
+            <div class="copy">© 2026 Central Café. Створено з любов'ю до кави.</div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

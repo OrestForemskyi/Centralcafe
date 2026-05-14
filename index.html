@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Café — Затишна кав'ярня</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="img/Central Café-logo.png" type="image/png">
+</head>
+<body>
+
+    <!-- навігація та логотип на хедері -->
+    <!-- фіксована  -->
+
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <img src="img/Central Café-logo.png" alt="Central Café" class="icon"> Central Café
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="menu.html">Меню</a></li>
+                    <li><a href="booking.html">Бронювання</a></li>
+                    <li><a href="#contacts">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="burger" id="burger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <!--Велике зображення з текстом та кнопками -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Затишна кав'ярня <br> <span class="accent-text">у серці міста</span></h1>
+            <p>Свіжообсмажена кава, домашня випічка та приємна атмосфера</p>
+            <div class="hero-btns">
+                <a href="#menu" class="btn btn-primary">Переглянути меню</a>
+                <a href="booking.html" class="btn btn-outline">Забронювати столик</a>
+            </div>
+        </div>
+        <div class="scroll-down"><i class="fas fa-mouse"></i></div>
+    </section>
+
+    <!-- ПРО НАС -->
+    <section id="about" class="about">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h2>Про <span class="accent-text">Central</span></h2>
+                <p>Ми — більше ніж просто кав'ярня. Це місце, де зустрічаються друзі, народжуються ідеї та смакують найкращу каву у місті.</p>
+                <p>Наші бариста — справжні майстри своєї справи, які обирають найкращі зерна.</p>
+                <div class="about-footer">❤ Створено з любов'ю</div>
+            </div>
+            <div class="about-image">
+                <img src="img/about-coffee.jpg" alt="Про нас">
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <!-- МЕНЮ -->
+            <div class="section-title">
+                <h2>Наше <span class="accent-text">меню</span></h2>
+                <p>Відкрийте для себе світ неповторних смаків</p>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <img src="img/espresso.jpg" alt="Еспресо">
+                    <div class="card-info">
+                        <div class="card-header">
+                            <h3>Еспресо класик</h3>
+                            <span class="price">45 ₴</span>
+                        </div>
+                        <p>Міцна та ароматна класика з відбірних зерен арабіки</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="img/coffee3.jpg" alt="Капучино">
+                    <div class="card-info">
+                        <div class="card-header">
+                            <h3>Капучино велюр</h3>
+                            <span class="price">65 ₴</span>
+                        </div>
+                        <p>Ніжна молочна піна з ноткою ванілі</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="img/coffee2.jpg" alt="Латте">
+                    <div class="card-info">
+                        <div class="card-header">
+                            <h3>Авторський латте</h3>
+                            <span class="price">70 ₴</span>
+                        </div>
+                        <p>Унікальний рецепт з карамельним сиропом</p>
+                    </div>
+                </div>
+            </div>
+            <div class="center-btn">
+                <a href="menu.html" class="btn btn-primary">Переглянути повне меню</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <!-- КОНТАКТИ-->
+            <div class="section-title">
+                <h2>Завітайте <span class="accent-text">до нас</span></h2>
+                <p>Ми завжди раді вас бачити</p>
+            </div>
+            <div class="contacts-grid">
+                <div class="contact-card">
+                    <div class="c-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Адреса</h3>
+                    <p>вул. Володимира Великого<br>Львів, 79000</p>
+                </div>
+                <div class="contact-card">
+                    <div class="c-icon"><i class="fas fa-clock"></i></div>
+                    <h3>Години роботи</h3>
+                    <p>Пн-Пт: 7:00 - 22:00<br>Сб-Нд: 8:00 - 23:00</p>
+                </div>
+                <div class="contact-card">
+                    <div class="c-icon"><i class="fas fa-phone"></i></div>
+                    <h3>Контакти</h3>
+                    <p>+38 (050) 123-45-67<br>Centralcafe@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФУТЕР -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="logo"><img src="img/Central Café-logo.png" alt="Central Café" class="icon"> Central Café</div>
+            <div class="copy">© 2026 Central Café. Створено з любов'ю до кави.</div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

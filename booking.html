@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронювання столика — Central Café</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="img/Central Café-logo.png" type="image/png">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-inner">
+            <!-- ЛОГОТИП -->
+            <div class="logo">
+                <img src="img/Central Café-logo.png" alt="Central Café" class="icon"> Central Café
+            </div>
+            <!-- МЕНЮ НАВІГАЦІЇ -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#about">Про нас</a></li>
+                    <li><a href="menu.html">Меню</a></li>
+                    <li><a href="booking.html">Бронювання</a></li>
+                    <li><a href="index.html#contacts">Контакти</a></li>
+                </ul>
+            </nav>
+            <!-- БУРГЕР МЕНЮ -->
+            <div class="burger" id="burger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div>
+            <!-- ЗАГОЛОВОК СТОРІНКИ БРОНЮВАННЯ -->
+            <h1>Забронюйте <span class="accent-text">столик</span></h1>
+            <p>Насолоджуйтесь атмосферою затишку та найкращою кавою</p>
+        </div>
+    </section>
+
+    <section class="booking-section">
+        <div class="container">
+            <!-- ФОРМА БРОНЮВАННЯ-->
+            <div class="form-grid">
+                <form id="bookingForm">
+                    <!-- ДАНІ КЛІЄНТА -->
+                    <div class="form-section-title">Ваші дані</div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Ваше імʼя</label>
+                            <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Номер телефону</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+38 (0__) ___-__-__" required>
+                    </div>
+
+                    <!-- ДЕТАЛІ БРОНЮВАННЯ-->
+                    <div class="form-section-title">Деталі бронювання</div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Дата</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Час</label>
+                            <select id="time" name="time" required>
+                                <option value="">Оберіть час</option>
+                                <option value="08:00">08:00</option>
+                                <option value="08:30">08:30</option>
+                                <option value="09:00">09:00</option>
+                                <option value="09:30">09:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Кількість осіб</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Оберіть кількість</option>
+                                <option value="2">2 особи</option>
+                                <option value="3">3 особи</option>
+                                <option value="4">4 особи</option>
+                                <option value="5">5 осіб</option>
+                                <option value="6">6 осіб</option>
+                                <option value="7">7 осіб</option>
+                                <option value="8">8 осіб</option>
+                                <option value="8plus">8+ осіб</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comments">Особливі побажання (необов'язково)</label>
+                        <textarea id="comments" name="comments" rows="4" placeholder="Поділіться своїми побажаннями..."></textarea>
+                    </div>
+
+                    <button type="submit" class="booking-btn">Забронювати столик</button>
+                    <div id="bookingMessage" class="booking-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="logo"><img src="img/Central Café-logo.png" alt="Central Café" class="icon"> Central Café</div>
+            <div class="copy">© 2026 Central Café. Створено з любов'ю до кави.</div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
